@@ -1,0 +1,49 @@
+.login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login .header {
+    display: flex;
+}
+
+.login .header p {
+    margin: 15px 5px 10px;
+    color: var(--hover);
+}
+
+.login .loginForm {
+    width: 350px;
+    margin: 0 auto;
+    background-color: var(--card-background);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 3px var(--hover);
+}
+
+.loginForm .btn {
+    margin: 10px auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.loginForm .links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 15px 0 10px;
+}
+
+.loginForm .links a {
+    display: block;
+    font-size: .7rem;
+    color: var(--border);
+    margin: 3px auto;
+}
+
+.loginForm .links a:hover {
+    color: var(--hover);
+}

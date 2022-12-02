@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+.side {
+    background-color: var(--card-background);
+    padding: 2rem 1rem 2rem 2rem;
+    width: 22%;
+    height: 100vh;
+    position: fixed;
+    font-family: 'Cairo', sans-serif;
+}
+
+.side .header {
+    margin: 0 0 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--hover);
+    display: flex;
+    justify-content: space-between;
+}
+
+.side .header .cancelBtn {
+    margin: auto 5px;
+    display: none;
+}
+
+.side .header .cancelBtn:hover {
+    color: var(--hover);
+}
+
+.list {
+    padding-left: 10px;
+}
+
+.list li {
+    margin: 20px auto;
+}
+
+.list a {
+    color: var(--font);
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.list a:hover {
+    color: var(--hover);
+}
+
+.setting {
+    display: flexbox;
+    justify-content: space-between;
+}
+
+.setting svg {
+    margin: auto 5px;
+}
+
+.side button {
+    margin: 0 20px;
+}
+
+.side .footer {
+    margin: 10px auto;
+    text-align: center;
+    font-size: 14px;
+    color: var(--border);
+}
+
+.side .footer a {
+    color: var(--hover);
+}
+
+.side .footer a:hover {
+    color: var(--border);
+}
+
+@media (min-width: 281px) and (max-width: 767px) {
+    .side {
+        visibility: hidden;
+        width: 75%;
+        z-index: 4;
+        transition: 600ms ease;
+    }
+    .side .header .cancelBtn {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .side {
+        width: 25%;
+    }
+
+    .list .listAbout p {
+        display: flex;
+    }
+}

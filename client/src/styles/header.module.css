@@ -1,0 +1,82 @@
+.header {
+    padding: 25px 3rem 15px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--hover);
+}
+
+.header .sectionBars {
+    display: flex;
+}
+
+.header .sectionBars svg {
+    display: none;
+    margin: 3px 15px 3px 10px;
+    font-size: 24px;
+}
+
+.header .sectionBars svg:hover {
+    color: var(--hover);
+}
+
+.header .buttons button {
+    margin: 0 5px;
+}
+
+.modal {
+    background-color: var(--hover);
+}
+
+.modal div {
+    border-color: var(--border);
+}
+
+.modal button:hover {
+    color: var(--background);
+    border-color: var(--background);
+}
+
+.formCreate {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formCreate select {
+    margin-bottom: 10px;
+    background-color: var(--background);
+    color: var(--border);
+    border-color: var(--border);
+}
+
+.formCreate input {
+    background-color: var(--background);
+}
+
+.formCreate .btn {
+    background-color: transparent;
+}
+
+.formCreate .btn:hover {
+    color: var(--background);
+    border-color: var(--background);
+}
+
+@media (min-width: 281px) and (max-width: 767px) {
+    .header {
+        padding: 15px;
+    }
+
+    .header .sectionBars svg {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .App .container {
+        width: 75%;
+        left: 25%;
+    }
+}

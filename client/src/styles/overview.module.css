@@ -1,0 +1,56 @@
+.overview {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 2rem auto;
+}
+
+.matrix .card {
+    background-color: var(--card-background);
+    padding: 15px;
+    box-shadow: 3px 3px 1px 1px var(--border);
+}
+
+.matrix .card .task {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 3px 3px 1px 1px var(--hover);
+    margin: 10px auto;
+    padding: 3px 10px;
+    
+}
+
+.matrix .card .task section svg {
+    cursor: pointer;
+}
+
+.matrix .card .task section svg:hover {
+    color: var(--hover);
+}
+
+.matrix .card .task .check {
+    margin: 0 5px;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: var(--border);
+}
+
+@media (min-width: 281px) and (max-width: 767px) {
+    .matrix {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .App .container {
+        width: 75%;
+        left: 25%;
+    }
+}

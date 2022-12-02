@@ -1,0 +1,48 @@
+.list {
+    width: 80%;
+    margin: 25px auto;
+}
+
+.list .tasks {
+    background-color: var(--card-background);
+    margin: 20px auto;
+    padding: 10px 15px 20px;
+    box-shadow: 3px 3px 1px 1px var(--border);
+}
+
+.list .tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background);
+    padding: 10px 15px;
+    box-shadow: 3px 3px 1px 2px var(--hover);
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.list .tasks .task:hover {
+    transform: scale(1.01);
+    transition: .1s;
+}
+
+.list .tasks .task .date {
+    font-size: 0.7rem;
+    margin: -15px 0 5px;
+}
+
+.task section svg {
+    cursor: pointer;
+}
+
+.task section svg:hover {
+    color: var(--hover);
+}
+
+.task .check {
+    margin: 0 5px;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: var(--border);
+}

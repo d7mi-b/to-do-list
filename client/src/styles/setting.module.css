@@ -1,0 +1,18 @@
+.setting {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.setting header {
+    margin-bottom: 15px;
+}
+
+.setting .changePasswordSec {
+    padding: 0 1.5rem;
+}
+
+.setting .changePasswordForm {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+.about {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.about article {
+    margin: 2rem auto;
+}
+
+.about p {
+    color: var(--border);
+    margin: 0 10px;
+}
+
+.about .strategies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.about .strategies .strategie {
+    background-color: var(--card-background);
+    padding: 2rem 1rem;
+    margin: 0;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    box-shadow: 3px 3px 1px 1px var(--border);
+}

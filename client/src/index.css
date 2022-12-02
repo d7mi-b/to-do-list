@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  --background: #00141f;
+  --card-background: #000e14;
+  --font: #eee;
+  --hover: #00607a;
+  --border: #6c6c6c;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--font);
+  font-family: 'Cairo', sans-serif;
+  background-image: url('./images/Rect\ Light.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-height: 100vh;
+}
+
+.page {
+  display: flex;
+}
+
+.App .container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 22%;
+  width: 78%;
+}
+
+.btn {
+  color: var(--font);
+  border-color: var(--font);
+}
+
+.btn:hover {
+  color: var(--hover);
+  border-color: var(--hover);
+  transform: scale(1.01);
+}
+
+.form-control {
+  margin: 5px 0 15px;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  color: var(--border);
+}
+
+.form-control:focus {
+  background-color: var(--background);
+  color: var(--font);
+}
+
+.form-control:focus-visible {
+  border-color: var(--hover);
+}
+
+.error {
+  font-size: .85rem;
+  text-align: center;
+  text-decoration: underline var(--hover) 3px;
+}
+
+@media (min-width: 281px) and (max-width: 767px) {
+  .App .container {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .App .container {
+    width: 75%;
+    left: 25%;
+  }
+}
